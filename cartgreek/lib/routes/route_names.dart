@@ -12,6 +12,6 @@ class NavigationServices {
   }
 
   Future<dynamic> gotoHomeScreen() async {
-    return await _pushMaterialPageRoute(const MainHomePage());
+    return await Get.offAll(const MainHomePage());
   }
 }

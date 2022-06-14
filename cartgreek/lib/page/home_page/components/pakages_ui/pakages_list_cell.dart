@@ -42,8 +42,8 @@ class PakagesCellView extends StatelessWidget {
                     borderColor: Colors.transparent,
                     color: bookNowColor,
                     child: SizedBox(
-                      height: 28,
-                      width: 82,
+                      height: 30,
+                      width: 90,
                       child: Center(
                         child: Text('Book Now',
                             style: TextStyles(context)
@@ -78,7 +78,7 @@ class PakagesCellView extends StatelessWidget {
                 ),
               ),
               Text(
-                pakagesData.description?.substring(0, 150) ?? "",
+                pakagesData.description ?? "",
                 style: TextStyles(context)
                     .getDescriptionStyle()
                     .copyWith(color: textColors),
